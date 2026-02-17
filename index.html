@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NewsHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+  <h1>📰 NewsHub</h1>
+  <input type="text" id="search" placeholder="Pesquisar notícias...">
+  <a href="login.html">Login</a>
+</header>
+
+<nav>
+  <button onclick="filterCategory('Tecnologia')">Tecnologia</button>
+  <button onclick="filterCategory('Esportes')">Esportes</button>
+  <button onclick="filterCategory('Mundo')">Mundo</button>
+</nav>
+
+<main id="articles"></main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<h2>Login NewsHub</h2>
+<input type="email" id="email" placeholder="Email">
+<button id="loginBtn">Entrar</button>
+<button id="signupBtn">Cadastrar</button>
+
+<script>
+  document.getElementById("signupBtn").onclick = () => {
+    alert("Cadastro desativado para teste local.");
+  };
+
+  document.getElementById("loginBtn").onclick = () => {
+    const email = document.getElementById("email").value;
+    if (!email) return alert("Digite um email");
+
+    localStorage.setItem("user", JSON.stringify({ email, name: "Bashir" }));
+    alert("Login fake realizado com sucesso!");
+    window.location.href = "index.html";
+  };
+</script>
